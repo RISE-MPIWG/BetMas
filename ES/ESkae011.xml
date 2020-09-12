@@ -397,7 +397,7 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                             text area and margin dimensions taken from
                             <locus target="#56r"/>. 21 characters per written line.
                             The number of written lines and characters vary according to
-                            the scribal hand. On <locus target="#59r"/>, the scribe used only
+                            the scribal hand. On <locus target="#59r"/> the scribe used only
                             half of the page.
                           </note>
                         </layout>
