@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/BetaMasaheft/Schema/master/tei-betamesaheft.rng" 
-schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/BetaMasaheft/Schema/master/tei-betamesaheft.rng" 
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/BetaMasaheft/Schema/master/tei-betamesaheft.rng"
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/BetaMasaheft/Schema/master/tei-betamesaheft.rng"
 type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ESkae011" xml:lang="en" type="mss">
    <teiHeader xml:base="https://betamasaheft.eu/">
       <fileDesc>
@@ -27,7 +27,7 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                   <idno facs="KAE/011/KAE-011_" n="66">KAE-011</idno>
                </msIdentifier>
                <msContents>
-                  <summary/> 
+                  <summary/>
                </msContents>
                <physDesc>
                   <objectDesc form="Codex">
@@ -37,7 +37,7 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                         </support>
                         <extent>
                            <measure unit="leaf">59</measure>
-                           <measure unit="leaf" type="blank"> 3-4r, 5v, 6, 8v, 52v-53r, 59v </measure>
+                           <measure unit="leaf" type="blank">1r, 3r-4r, 5v, 6r, 6v, 8v, 52v-53r, 63v</measure>
                            <measure unit="quire">8</measure>
                            <dimensions type="outer">
                               <height unit="mm">214</height>
@@ -47,39 +47,41 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                         </extent>
                         <collation>
                            <list>
-                              <item xml:id="q1">
+                              <item xml:id="q1" n="A">
                                  <dim unit="leaf">8</dim>
                                  <locus from="1r" to="8v" facs="002"/>
                               </item>
-                              <item xml:id="q2">
+                              <item xml:id="q2" n="2">
                                  <dim unit="leaf">8</dim>
                                  <locus from="9r" to="16v" facs="010"/>
                               </item>
-                              <item xml:id="q3">
+                              <item xml:id="q3" n="3">
                                  <dim unit="leaf">8</dim>
                                  <locus from="17r" to="24v" facs="018"/>
                               </item>
-                              <item xml:id="q4">
+                              <item xml:id="q4" n="4">
                                  <dim unit="leaf">8</dim>
                                  <locus from="25r" to="32v" facs="026"/>
                               </item>
-                              <item xml:id="q5">
+                              <item xml:id="q5" n="5">
                                  <dim unit="leaf">8</dim>
-                                 <locus from="33r" to="40v" facs="034"/>
+                                 <locus from="33r" to="40v"/>
                               </item>
-                              <item xml:id="q6">
+                              <item xml:id="q6" n="6">
                                  <dim unit="leaf">6</dim>
                                  <locus from="41r" to="46v" facs="042"/>
                               </item>
 
-                              <item xml:id="q7">
+                              <item xml:id="q7" n="7">
                                  <dim unit="leaf">8</dim>
                                  <locus from="47r" to="54v" facs="048"/>
                               </item>
 
-                              <item xml:id="q8">
+                              <item xml:id="q8" n="8">
                                  <dim unit="leaf">5</dim>
-                                 <locus from="55r" to="59v" facs="055"/> s.l. 5 stub before 2 </item>
+                                 <locus from="55r" to="59v" facs="055"/>
+                                 s.l.: 5 stub before 1
+                               </item>
 
                            </list>
                         </collation>
@@ -88,29 +90,7 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                      </supportDesc>
 
                   </objectDesc>
-                  <additions>
-                     <list>
 
-                        <item xml:id="a1">
-                           <locus from="1v" to="2v" facs="002"/>
-                           <desc type="Letter"> a letter of <persName ref="PRS9451Tewoflos">
-                                 <roleName type="office">ʾǝč̣č̣age</roleName> Tewoflos
-                           </persName>concerning the “Orthodox faith”, in Amharic and Geez.</desc>
-                              <q xml:lang="gez"><seg part="I">ሃይማኖት፡ ማለት፡ አዋን፡ ብሎ፡ የሚቀበሉት፡ ኡነት፡ ብለው፡ የሚፀኑበት፡ ማለት᎓
-                                 ነው፡ ጦማረ፡ ሃይማኖት፡ ዘፈነዋ፡ እጨጌ፡ ቴዎፍሎስ፡ ዘነበረ፡ በመንበረ፡ ተክለ፡ ሃይማኖ</seg></q>
-                           
-                        </item>
-
-                        <item xml:id="a2">
-                           <locus target="#59ra" facs="059"/>
-                           <desc type="DonationNote">The name of the commissioner/owners are
-                              included.</desc>
-                           <q xml:lang="gez">ዛቲ፡ መጽሐፍ፡ ዘአቡነ፡ ገብረ፡ ወልድ፡ ኀጥእ፡ ወጌጉይ᎓
-                                 ዘወሀቦ፡ ለታቦተ፡ ፬እንስሳ፡ ዘኵናሌ፡ ዘሰረቆ፡ ወዘፈሐቆ፡ ውጉዝ፡ ለይኩን።</q>
-                           
-                        </item>
-                     </list>
-                  </additions>
                   <bindingDesc>
                      <binding contemporary="true">
                         <decoNote xml:id="b1">Two wooden boards. Two pairs of sewing stations. </decoNote>
@@ -118,7 +98,7 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                            <material key="wood"/>
                         </decoNote>
                         <decoNote xml:id="b3"> Three round holes in the upper part of the front
-                           boards; three round holes in the lower part of the back boards. The
+                           boards; three round holes of similar size and shape in the lower part of the back boards. The
                            threads of the sewing are damaged, the last quires are loose. A strip of
                            textile is bound to the threads of the sewing, between the front boards
                            and the first quire. </decoNote>
@@ -130,11 +110,17 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                      <origPlace>
                         <placeName ref="INS0234KAE"/>
                      </origPlace>
-                     <persName ref="PRS9451Tewoflos">
-                        <roleName type="office">ʾǝč̣č̣age</roleName> Tewoflos </persName> was in
-                     office in 
-                     <origDate from="1872" to="1889" evidence="internal">
-                      1872-1889</origDate>
+                     <origDate from="1850" to="1889" evidence="internal">
+                      After the middle of the 19th century but before 1889.</origDate>
+                    <ref target="#p2">Unit 2</ref> was produced soon after <ref target="#p1">Unit 1</ref>,
+                    for the same commissioner
+                    <persName ref="PRS13144GabraWald" role="owner">Gabra Wald</persName>,
+                    among other persons,
+                    and in part by the same scribe who wrote  <ref target="#p1">Unit 1</ref>.
+                     Probably <ref target="#p2">Unit 2</ref> was not meant as independent circulation unit.
+                     <ref target="#a1">Addition 1</ref> of <ref target="#p1">Unit 1</ref> might have been penned by
+                     <persName ref="PRS9451Tewoflos">ʾǝč̣č̣age Tewoflos </persName> who was in office in
+                     <date>1872-1889</date>.
                   </origin>
                </history>
                <additional>
@@ -180,7 +166,7 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                         <locus from="12rb" to="13vb" facs="013"/>
                         <title type="complete" ref="LIT3584Intro"/>
                      </msItem>
-                        
+
                      <msItem xml:id="p1_i1.4">
                         <locus from="13vb" to="14vb" facs="014"/>
                         <title type="complete" ref="LIT3056RepCh336"/>
@@ -188,25 +174,22 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
 
                      <msItem xml:id="p1_i1.5">
                         <locus from="14vb" to="42vb" facs="015"/>
-                        <title type="complete" ref="LIT3585Taamme"/>
-                        <note>25 miracles</note>
+                        <title type="complete" ref="LIT3585Taamme">25 miracles of St Mary</title>
+                        <note></note>
                      </msItem>
                      </msItem>
 
                      <msItem xml:id="p1_i1.6">
-                        <locus from="43ra" to="51vb" facs="044"/>
+                        <locus from="43ra" to="51va" facs="044"/>
                         <title>Miracles of Jesus Christ, St Michael, Gabra Manfas Qǝddus, Takla
-                           Haymanot</title>
+                           Hāymānot</title>
                      </msItem>
                      <msItem xml:id="p1_i1.7">
                         <locus from="51vb" to="52ra" facs="052"/>
-                        <title>Zǝkra lǝdatu la-ʾǝgziʾǝna ʾIyasus Krǝstos “Recollection of the
-                           genealogy of Our Lord Jesus Christ” </title>
+                        <title type="complete" ref="LIT5992Miracle">One miracle of Jesus Christ</title>
+                        <note>Published <bibl><ptr target="bm:Grebaut1917MiraclesJesusI"/><citedRange unit="page">583-585
+                      </citedRange></bibl>.</note>
                      </msItem>
-
-
-
-
                   </msContents>
 
                   <physDesc>
@@ -214,7 +197,8 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                         <supportDesc>
                            <extent>
                               <measure unit="leaf">54</measure>
-                              <measure unit="leaf" type="blank"> 3-4r, 5v, 6, 8v, 52v-53r </measure>
+                              <measure unit="leaf" type="blank">
+                                 3-4r, 5v, 6, 8v, 52v-53r </measure>
                               <measure unit="quire">7</measure>
                               <dimensions type="outer">
                                  <height unit="mm">214</height>
@@ -226,27 +210,48 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
 
                         <layoutDesc>
 
-                           <layout columns="2"> </layout>
-
-
-
-                           <layout/>
+                           <layout columns="2" writtenLines="20 22">
+                           <locus from="7ra" to="58vb"/>
+                           <note corresp="#textarea #margin">Data on
+                             text area and margin dimensions taken from
+                             <locus target="#10r"/>.
+                             11-13 characters per written line.</note>
+                             <note>The written area is somewhat misshaped (biased) on many folia.</note>
+                             <dimensions unit="mm" xml:id="textarea">
+                                <height>145</height>
+                                <width>125</width>
+                             </dimensions>
+                             <dimensions type="margin" unit="mm" xml:id="margin">
+                                <dim type="top">21</dim>
+                                <dim type="bottom">37</dim>
+                                <dim type="intercolumn">10</dim>
+                                <dim type="right">27</dim>
+                                <dim type="left">8</dim>
+                             </dimensions>
+                         </layout>
                         </layoutDesc>
 
                      </objectDesc>
 
                      <handDesc>
-                        <handNote xml:id="h1" script="Ethiopic">
-                           <seg type="script"/>
-                           <date notBefore="1872" notAfter="1900"/>
-                           <note>Main hand of the first unit</note>
+                        <handNote xml:id="h1" script="Ethiopic" corresp="#p1 #p2_i1.1 #p2_i1.2 #p2_i1.3
+                          #p2_i1.4 #p2_i1.6 #p2_i1.7">
+                          <locus from="7r" to="52ra"/>
+                          <locus from="53va" to="56vb"/>
+                          <locus from="58v" to="59r"/>
+                             <seg type="script">Second half of the 19th-century script</seg>
+                             <date notBefore="1850" notAfter="1900"/>
+                             <seg type="ink">Black (brownish); red</seg>
                            <seg type="rubrication">A lot of rubricated words, in the main hand;
                               rubrication is executed in the main hand, probably after the copying
                               of the main text (in some cases one can see that the space left for
-                              rubricated word was not enough). </seg>
+                              rubricated word was not enough).</seg>
+                              <desc>Somewhat irregular and hasty, by a mediocre scribe. Slender, right-sloping,
+                                with some tendency to cursive script. The top of ጥ is nearly flat (e.g., <locus target="#8ra #10rb #21va"/>);
+                                The 6th order marker of ግ is emphesized, set up on a straight oblique
+                                line; ጵ has the contemporary shape (e.g., <locus target="#9va"/>);
+                                the left leg of ለ leans upon the right leg.</desc>
                         </handNote>
-
-
                      </handDesc>
                      <decoDesc>
 
@@ -260,7 +265,7 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                         <decoNote xml:id="d4">Ff. 3-6 containing the miniatures, unruled (only a
                            frame on the leaves with miniatures), of smaller or irregular size. In
                            fact it is not 100% sure that the miniatures were prepared and infixed
-                           into the text block later, separately. The miniatures were painted by a
+                           into the text block later. The miniatures were painted by a
                            professional artist; I see a tacket in the fold above, between f. 4v and
                            f. 5r. Another explanation cannot be excluded: the quire with miniatures
                            was bound together with regular quires, and the tacket was left by
@@ -272,6 +277,54 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                            leaves) similarly build a separate unit, the result of a separate
                            production process.</decoNote>
                      </decoDesc>
+                     <additions>
+                        <list>
+
+                           <item xml:id="a1">
+                              <locus from="1v" to="2v" facs="002"/>
+                              <desc type="Letter">A letter of <persName ref="PRS9451Tewoflos">
+                                    <roleName type="office">ʾǝč̣č̣age</roleName> Tewoflos
+                              </persName>concerning the “Orthodox faith”, in Amharic and Geez.</desc>
+                                 <q xml:lang="am"><seg part="I">ሃይማኖት፡ ማለት፡ አዋን፡ ብሎ፡ የሚቀበሉት፡ ኡነት፡ ብለው፡ የሚፀኑበት፡ ማለት᎓
+                                    ነው፡ ጦማረ፡ ሃይማኖት፡ ዘፈነዋ፡ እጨጌ፡ ቴዎፍሎስ፡ ዘነበረ፡ በመንበረ፡ ተክለ፡ ሃይማኖ፡ ውስተ፡ ኵሎን፡ አብያተ፡ ክርስቲያናት፡ ኀገረ፡
+                                  ተንቤን፡ በእዴሁ፡ ለአቡነ፡ መምህር፡ ገብረ፡ ወልድ፡ አጽምኡ፡</seg></q>
+                                  <note>The letter summarizes the <foreign xml:lang="amh">hulatt lǝdat</foreign>doctrine.
+                                  It was probably written by <persName ref="PRS9451Tewoflos"/> with his own hand, before his deposition
+                                  around <date>1889</date>.
+                                <foreign xml:lang="am">ʾAbuna mamhǝr Gabra Wald </foreign> mentioned in the text
+                                 is likely <persName ref="PRS13144GabraWald" role="owner">Gabra Wald</persName>,
+                                  the owner of the manuscript.</note>
+
+                           </item>
+
+                           <item xml:id="a2">
+                              <locus target="#59ra" facs="059"/>
+                              <desc type="DonationNote">Written in the main hand.</desc>
+                              <q xml:lang="gez">ዛቲ፡ መጽሐፍ፡ ዘአቡነ፡ <persName ref="PRS13144GabraWald" role="owner">ገብረ፡ ወልድ፡ </persName>
+                              ኀጥእ፡ ወጌጉይ᎓ ዘወሀቦ፡ ለታቦተ፡ ፬እንስሳ፡ ዘኵናሌ፡ ዘሰረቆ፡ ወዘፈሐቆ፡ ውጉዝ፡ ለይኩን።</q>
+                                    </item>
+
+                                    <item xml:id="e1">
+                                       <locus target="#10r"/>
+                                       <desc type="Correction">The omitted passage added in the upper margin,
+                                       its place in the text shown by a <foreign xml:lang="am">tamallas</foreign>-sign.</desc>
+                                       </item>
+
+                                    <item xml:id="e2">
+                                       <locus target="#10v"/>
+                                       <desc type="Correction">The omitted passage added in the upper margin,
+                                       omitted words added interlineally.</desc>
+                                       </item>
+
+                                       <item xml:id="e3">
+                                          <locus target="#40v" facs="059"/>
+                                          <desc type="Correction">The omitted passage added in the upper margin,
+                                          its place in the text shown by a <foreign xml:lang="am">tamallas</foreign>-sign.</desc>
+                                          </item>
+
+                        </list>
+                     </additions>
+
                   </physDesc>
 
                </msPart>
@@ -281,7 +334,7 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                   <msIdentifier/>
                   <msContents>
                      <summary>Six miracles of the Four Living Creatures</summary>
-                     
+
                      <msItem xml:id="p2_i1">
                         <locus from="55r" to="58v" facs="056"/>
                         <title ref="LIT5630Tammer4Ensesa">Collection of miracles of the Four Living Creatures, salām-hymn to
@@ -310,21 +363,20 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                         <msItem xml:id="p2_i1.5">
                            <locus from="57r" to="57v" facs="059"/>
                            <title>Miracle of the Four Living Creatures </title>
-                           <note>in a different hand?</note>
                         </msItem>
 
                         <msItem xml:id="p2_i1.6">
                            <locus from="58r" to="58v" facs="060"/>
-                           <title ref="LIT2382Taamme">Miracle of Jesus Christ </title>
+                           <title ref="LIT2382Taamme">One miracle of Jesus Christ</title>
                         </msItem>
 
                         <msItem xml:id="p2_i1.7">
-
                            <locus target="#59r"/>
-                           <title ref="LIT5631Salam4Ensesa">salām-hymn (added) </title>
+                           <title ref="LIT5631Salam4Ensesa">Salām-hymn </title>
                         </msItem>
                      </msItem>
                   </msContents>
+
                   <physDesc>
                      <objectDesc>
                         <supportDesc>
@@ -334,37 +386,48 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
                               <dimensions type="outer">
                                  <height unit="mm">195</height>
                                  <width unit="mm">130</width>
-
                               </dimensions>
                            </extent>
                         </supportDesc>
 
                         <layoutDesc>
-
-
-
-                           <layout columns="1"> </layout>
-
-                           <layout/>
+                           <layout columns="1" writtenLines="18">
+                          <locus from="55r" to="59r"/>
+                          <note corresp="#textarea #margin">Data on
+                            text area and margin dimensions taken from
+                            <locus target="#56r"/>. 21 characters per written line.
+                            The number of written lines and characters vary according to
+                            the scribal hand. On <locus target="#59r"/>, the scribe used only
+                            half of the page.
+                          </note>
+                        </layout>
                         </layoutDesc>
                      </objectDesc>
                      <handDesc>
 
 
-                        <handNote xml:id="h2" script="Ethiopic" corresp="#p2">
-                           <seg type="script"/>
-                           <date notBefore="1801" notAfter="1900"/>
-                           <locus target="#55 #56" facs="055"/>
-                           <locus target="#58r" cert="low" facs="058"/>
-                           <locus target="#58v" facs="059"/>
-                           <note>the hand of msPart 2, a different hand from the first part</note>
+
+                        <handNote xml:id="h2" script="Ethiopic" corresp="p2_i1.5">
+                          <locus from="57r" to="57v"/>
+                            <seg type="script">Second half of the 19th-century script</seg>
+                            <seg type="ink">Black; red</seg>
+                           <date notBefore="1850" notAfter="1900"/>
+                           <seg type="rubrication"></seg>
+                           <desc>Somewhat irregular but careful, by a mediocre scribe. Big letters with thin strokes.
+                             Mostly rectangular letter shapes. No rubricated elements. The top of ጥ is flat (<locus target="#57r"/>).
+                           Unusually, the 7th order marker in ሆ is set up in the middle of the right vertical stroke;
+                         the stem of ይ strongly bent to the the right.</desc>
                         </handNote>
 
-                        <handNote xml:id="h3" script="Ethiopic" corresp="p2_i1.5">
-                           <seg type="script"/>
-                           <date notBefore="1801" notAfter="1900"/>
-                           <locus target="#57" facs="058"/>
-                           <note>a different hand </note>
+                        <handNote xml:id="h3" script="Ethiopic">
+                          <seg type="script">Second half of the 19th-century script</seg>
+                         <date notBefore="1850" notAfter="1900"/>
+                           <locus target="#58r"/>
+                           <seg type="ink">Black; red</seg>
+                           <seg type="rubrication"></seg>
+                           <desc>Somehwat irregular, careful; by a mediocre scribe. Slightly right-sloping, broadly spaced. Rounded
+                             letter shapes. Hairlines. This hand whote only the first half of
+                            <ref target="#p2_i1.6"/></desc>
                         </handNote>
                      </handDesc>
                   </physDesc>
@@ -383,13 +446,15 @@ type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI
          </xi:include>
       </encodingDesc>
       <profileDesc>
-         
+
          <textClass>
             <keywords scheme="#ethioauthlist">
                <term key="Homily"/>
                <term key="Hagiography"/>
                <term key="Poetry"/>
                <term key="Miracle"/>
+                    <term key="Apocrypha"/>
+                    <term key="MoPe"/>
             </keywords>
          </textClass>
          <langUsage><language ident="en">English</language><language ident="gez">Gǝʿǝz</language></langUsage>
